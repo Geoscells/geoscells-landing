@@ -41,5 +41,9 @@
   "keywords": [
     "geoscells",
     "landing"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Geoscells/geoscells-landing.git"
+  }
 }
