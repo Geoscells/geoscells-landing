@@ -17,7 +17,7 @@ module.exports = {
       user: 'alexiuscrow',
       host: '10.156.0.3',
       ref: 'origin/main',
-      repo: 'git@landing_deploy:alexiuscrow/geoscells-landing.git',
+      repo: 'git@landing_deploy:Geoscells/geoscells-landing.git',
       path: '/home/landing',
       'post-deploy': `npm install && env-cmd -f ${ENV_PATH} npm run build && PM2_HOME=/var/www pm2 reload ecosystem.config.js --env production`,
       key: '~/.ssh/geoscells'
