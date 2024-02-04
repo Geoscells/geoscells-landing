@@ -4,7 +4,8 @@ module.exports = {
   apps: [
     {
       name: 'landing',
-      script: 'npm start',
+      script: 'npm',
+      args: 'start',
       env: {
         PM2_SERVE_PORT: 8081,
         PM2_HOME: '/var/www'
