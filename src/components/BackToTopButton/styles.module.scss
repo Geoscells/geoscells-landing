@@ -1,0 +1,64 @@
+@use 'sass:map';
+@use '../../styles/variables';
+
+.container {
+  width: 100%;
+
+  .button {
+    position: fixed;
+    background-color: variables.$colorGeoGray;
+    border-radius: variables.$borderRadius 0 0 variables.$borderRadius;
+    top: 23%;
+    width: 56px;
+    height: 62px;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2000ms ease-in;
+    border: 0;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      top: 36%;
+      width: 72px;
+      height: 80px;
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      top: 42%;
+      width: 72px;
+      height: 85px;
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      width: 102px;
+      height: 120px;
+    }
+
+    &:hover {
+      .upArrow {
+        path {
+          fill: variables.$colorSolidWhite;
+        }
+      }
+    }
+
+    &.toTopButtonVisible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .upArrow {
+      @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+        width: 45.49px;
+        height: 26.27px;
+      }
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+        width: 63.92px;
+        height: 37.33px;
+      }
+    }
+  }
+}

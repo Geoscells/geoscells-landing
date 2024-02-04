@@ -1,0 +1,207 @@
+interface Resources {
+  "translation": {
+    "title": "Home | Geoscells",
+    "description": "Correct identification of cancer stem cells. Geoscells, a company engaged in the search for new methods in regenerative medicine.",
+    "headerNavigation": {
+      "mission": "Mission",
+      "ourFunctions": "Our Functions",
+      "aboutUs": "About Us",
+      "projects": "Projects",
+      "founders": "Founders",
+      "principles": "Principles",
+      "contacts": "Contacts"
+    },
+    "fewWordsNearLogo": {
+      "firstLine": "Charitable organization \"Save Science in Ukraine\":",
+      "secondLine": "Let's change the world for the better! Together we can do it!"
+    },
+    "headerContact": {
+      "anyQuestions": "Do you have any questions? Contact us!",
+      "tel": "+38(044)247-78-00",
+      "email": "info@savescienceukraine.org"
+    },
+    "sections": {
+      "welcome": {
+        "title": "We promote the implementation of programs and activities aimed at science and new medical discoveries",
+        "points": [
+          "We are actively raising funds for the development of an innovative medical project",
+          "Promote the exchange of experience and knowledge"
+        ],
+        "learnMoreTitle": "Learn more about our charitable foundation or support our initiatives financially",
+        "buttons": {
+          "support": "Support",
+          "learnMore": "Learn more"
+        }
+      },
+      "mission": {
+        "title": "Our mission: what we are working on",
+        "paragraphs": [
+          {
+            "boldPrefix": "Our global mission",
+            "text": " is to create the most favorable conditions for the development of science and support scientific research that will improve the standard of living and quality of life of every person on the planet, fully promoting medical innovations in medicine."
+          },
+          {
+            "boldPrefix": "Our mission-minimum",
+            "text": " is to invest in the development and strengthening of science in Ukraine, to establish close cooperation with best-in-class research institutes and centers, building mutually beneficial relationships with strategic partners for the overall development of science and supporting in health innovations."
+          }
+        ],
+        "learnMoreButton": "Learn more"
+      },
+      "weDo": {
+        "title": "What exactly do we do",
+        "subTitle": "We collect charitable contributions from people and look for healthcare investors to implement scientific programs",
+        "text": "Newest medical breakthroughs do not come easy — scientists, doctors, diagnostic and research laboratories, etc. work on them. All this requires considerable funds, so our nonprofit healthcare organization accumulates funds so that practical medicine can use modern medical technologies and new clinical protocols as soon as possible to help patients recover faster, prevention of diseases recurrence and improve the quality of life.",
+        "supportButton": "Support the CF \"Let's Save Science in Ukraine\"",
+        "subSections": {
+          "subSec1": {
+            "title": "We participate in the development of latest medical advances and support the implementation of healthcare programs",
+            "text": "Our team is focused on solving global and extremely medical problem that modern medicine and pharmacology face today. The main goal is to move the field of medicine forward and remove the shortcomings of conservative treatment so that modern medicines can treat and restore health using scientific discoveries.",
+            "btnTitle": "Learn more about the research"
+          },
+          "subSec2": {
+            "title": "We find and connect projects, teams, researchers, laboratories, and companies",
+            "text": "Implementation of large-scale projects in the pharmaceutical discoveries requires not only financing of the project but also collaboration with research institutes, laboratories, and specialists working in various fields of science and research. After all, new medical discoveries can be achieved at the intersection of several disciplines — this is how new treatments and evidence-based medicines with a high percentage of effectiveness appear.",
+            "btnTitle": "Propose a collaboration"
+          }
+        }
+      },
+      "about": {
+        "title": "About our charity organization",
+        "paragraphs": [
+          "CO \"CF \"Save Science in Ukraine\" was officially founded in April 2022, but before that, since 2014, the founders have already carried out large-scale work to promote the development of science and research in Ukraine in the field of medicine.",
+          "\"Save Science in Ukraine\" is a medical non-profit organization that works on large-scale projects in healthcare, science and research to change this world for the better, and does not stop improving and setting new ambitious goals.",
+          "Our goal is to become an innovator in the foundation of medicine and related sciences. We see our success in innovative solutions and scientific discoveries to achieve the best results in treating diseases and prevention and improving health and their quality of life."
+        ]
+      },
+      "team": {
+        "title": "Founders",
+        "members": [
+          {
+            "name": "Mamed Shiraliyev, DM",
+            "position": "Founder and thought leader",
+            "keyFacts": [
+              "2 higher medical educations",
+              "own clinic",
+              "own diagnostic laboratory",
+              "research and development work that has resulted in patents that can revolutionize and improve modern treatment"
+            ]
+          },
+          {
+            "name": "Melik Shiraliev, DM",
+            "position": "Co-founder and CFO of the Foundation",
+            "keyFacts": [
+              "2 medical degrees",
+              "co-founder of the clinic",
+              "co-founder of the analysis laboratory",
+              "research and development and study of current and acute problems of medical science"
+            ]
+          },
+          {
+            "name": "Viktor Yermolov",
+            "position": "Head of Software Development Department",
+            "keyFacts": [
+              "higher education with a degree in Information Technology Design",
+              "knows everything about software development and server applications",
+              "worked in his specialty in companies that have gained a reputation for excellence in IT",
+              "now uses his skills and abilities in one of the most important areas for society - medicine"
+            ]
+          }
+        ],
+        "contactUsButton": "Contact the CO"
+      },
+      "principles": {
+        "title": "Principles of the Charitable Organization \"Save Science in Ukraine\"",
+        "items": [
+          {
+            "title": "High motivation",
+            "text": "Our young, highly qualified team is constantly striving for scientific discoveries, the creation of revolutionary medicines and improving healthcare quality that can make the world a healthier, preventing disease and safer place for everyone."
+          },
+          {
+            "title": "Integrated approach to research",
+            "text": "We adopt the latest technologies and build on the work of our predecessors, i.e. we use precision medicine and follow breakthrough in medical science."
+          },
+          {
+            "title": "Interest in",
+            "text": "Being interested in the business and its future helps us to keep the goal in mind. We constantly monitor news about medicines, study new research, and look for new ideas."
+          },
+          {
+            "title": "Consolidation of the scientific community",
+            "text": "We invite research laboratories, pharmaceutical companies, institutes, and specialists to cooperate with our foundation and promote the development of science and medicine in society and create the future of medical."
+          },
+          {
+            "title": "Belief in the future",
+            "text": "The use of modern technologies and scientific discoveries serves as a beacon for us - we see what the future of medicine, the future of a healthy person, how can you be healthy, and the future of a healthy society should look like."
+          },
+          {
+            "title": "Utilizing all opportunities",
+            "text": "Thanks to our talented team, investments, extensive partnerships and openness to new ones, we expand our capabilities for the sake of a common goal."
+          }
+        ]
+      },
+      "contactUs": {
+        "text": "If you have any questions or suggestions on how to support the charity organization \"Save Science in Ukraine\", please leave your phone number and we will call you back.",
+        "buttonTitle": "CONTACT"
+      },
+      "activeResearch": {
+        "title": "Scientific research already participating in our support program",
+        "subTitle": "Geoscells healthcare research program",
+        "learnMoreBtn": "Learn more",
+        "items": [
+          "Geoscells is a pioneer offering innovative solutions to achieve the best results in the treatment of cancer patients and improve their quality of life.",
+          "We are working on the implementation of unique high-performance methods and treatment protocols in the most serious area of cancer treatment.",
+          "We believe that we are able to solve global medical problems through stem cell research and the use of new therapies for cancer patients.",
+          "We act quickly, decisively, transparently and without violating ethical standards, do not stop in the face of difficulties and set new ambitious goals for continuous development."
+        ]
+      },
+      "investors": {
+        "title": "For patrons and investors",
+        "subTitle": "How you can support science, research and development of medicine in Ukraine through our charity",
+        "items": [
+          {
+            "title": "Make a financial contribution",
+            "text": "You can become a patron of medical research programs that we are already supporting",
+            "btnTitle": "Support us financially"
+          },
+          {
+            "title": "Help technologically",
+            "text": "Modern technologies, specialized research facilities, special lighting and equipment, etc. - you can help our scientists and researchers technologically",
+            "btnTitle": "Support with technology"
+          },
+          {
+            "title": "Share your knowledge",
+            "text": "We invite specialists, experts, and researchers from related fields to join our programs and accelerate our development with your knowledge and skills",
+            "btnTitle": "Propose a collaboration"
+          }
+        ]
+      }
+    },
+    "footer": {
+      "callUs": {
+        "label": "Give us a call",
+        "tel": "+38(044)247-78-00"
+      },
+      "socialMedias": {
+        "label": "Use social media",
+        "links": {
+          "facebook": "https://www.facebook.com/profile.php?id=100083225033980",
+          "x": "https://x.com/search?q=Geoscells&t=EfiZW9X-uEr1ikKTZX4Z2w&s=09",
+          "linkedin": "https://linkedin.com/company/geoscells",
+          "instagram": "https://www.instagram.com/geoscells_official/"
+        }
+      },
+      "writeUs": {
+        "label": "Write to us",
+        "email": "info@savescienceinukraine.org"
+      },
+      "address": {
+        "label": "Our address",
+        "addr": "6, Olena Teliha St., Kyiv, 04112, Ukraine"
+      },
+      "contactUsButton": "CONTACT",
+      "policyLink": "Privacy policy",
+      "rights": "\"CF \"Save Science in Ukraine\". All rights reserved. Copying of materials - only with the permission of the copyright holder!"
+    }
+  }
+}
+
+export default Resources;

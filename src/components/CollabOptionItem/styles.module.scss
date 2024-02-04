@@ -1,0 +1,69 @@
+@use 'sass:map';
+@use '../../styles/variables';
+@use '../../styles/functions';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+    max-width: 400px;
+  }
+
+  .preview {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: variables.$borderRadius;
+    margin-bottom: functions.map-deep-get(variables.$margins, 'mobile', 3);
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      margin-bottom: functions.map-deep-get(variables.$margins, 'tablet', 3);
+      height: 180px;
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      margin-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 4);
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      margin-bottom: functions.map-deep-get(variables.$margins, 'desktop2', 4);
+    }
+  }
+
+  .bottom {
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title, .text {
+      margin-bottom: functions.map-deep-get(variables.$margins, 'mobile', 4);
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+        margin-bottom: functions.map-deep-get(variables.$margins, 'tablet', 4);
+      }
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+        margin-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 4);
+      }
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+        margin-bottom: functions.map-deep-get(variables.$margins, 'desktop2', 5);
+      }
+    }
+
+    .buttonWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+}

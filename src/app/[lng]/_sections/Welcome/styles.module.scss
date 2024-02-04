@@ -1,0 +1,168 @@
+@use 'sass:map';
+@use '../../../../styles/variables';
+@use '../../../../styles/functions';
+
+.container {
+  width: 100%;
+  padding-top: 45px;
+  background-image: url(./head_pic.png);
+  background-position-x: 80%;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: all 500ms;
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+    background-position-x: center;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+    background-size: contain;
+  }
+
+  .contentWrapper {
+    grid-template-columns: 1fr;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: functions.map-deep-get(variables.$margins, 'tablet', 3);
+      justify-content: space-between;
+    }
+
+    .content {
+      transition: all 500ms;
+      text-align: center;
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+        text-align: left;
+        margin-top: functions.map-deep-get(variables.$margins, 'tablet', 4);
+        max-width: 420px;
+        width: 55%;
+      }
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+        margin-top: functions.map-deep-get(variables.$margins, 'desktop1', 3);
+      }
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+        max-width: 750px;
+        margin-top: 0;
+      }
+
+      .title {
+        font-family: variables.$gilroyFontFamily;
+        font-style: normal;
+        font-weight: variables.$fwBold;
+        font-size: 24px;
+        line-height: 115%;
+        letter-spacing: 0.005em;
+        padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 3);
+        transition: all 500ms;
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+          font-size: 25px;
+          line-height: 110%;
+          padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 3);
+        }
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+          padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 3);
+        }
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+          font-size: 49px;
+          padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 4);
+        }
+      }
+
+      .points {
+        padding-left: 1.8em;
+        padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 1) * 2;
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+          padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 1);
+        }
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+          padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 1);
+        }
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+          padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 2) * 3;
+        }
+
+        li::marker {
+          color: variables.$colorGeoRed;
+          font-size: 1.8em;
+        }
+      }
+
+      .learnMoreTitle {
+        padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 3);
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+          padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 3);
+        }
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+          padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 3);
+        }
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+          padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 4);
+        }
+      }
+
+      .buttonBlock {
+        display: flex;
+        transition: all 500ms;
+        gap: .8rem;
+        justify-content: center;
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    .content .buttonBlock, .imageWrapper {
+      padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 1);
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+        padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 1) * 2;
+      }
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+        padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 1) * 2;
+      }
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+        padding-bottom: functions.map-deep-get(variables.$margins, 'desktop2', 2) * 2;
+      }
+    }
+
+    .imageWrapper {
+      display: none;
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+        display: block;
+        flex-grow: 1;
+      }
+
+      .img {
+        width: 100%;
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+          height: 42px;
+        }
+
+        @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+          height: 52px;
+        }
+      }
+    }
+  }
+}

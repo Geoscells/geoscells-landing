@@ -1,0 +1,66 @@
+@use 'sass:map';
+@use '../../../../styles/variables';
+@use '../../../../styles/functions';
+
+.container {
+  width: 100%;
+  padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 1) * 2;
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 1) * 2;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 1) * 2;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'desktop2', 2) * 2;
+  }
+
+  .titleWrapper {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 2);
+    align-items: center;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 2);
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 2);
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      padding-bottom: functions.map-deep-get(variables.$margins, 'desktop2', 3);
+    }
+
+    .title {
+      margin-bottom: 0;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: functions.map-deep-get(variables.$margins, 'mobile', 3);
+    justify-content: space-evenly;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: functions.map-deep-get(variables.$margins, 'tablet', 3);
+      grid-row-gap: functions.map-deep-get(variables.$margins, 'tablet', 2);
+      justify-items: center;
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: functions.map-deep-get(variables.$margins, 'desktop1', 3);
+      grid-row-gap: functions.map-deep-get(variables.$margins, 'desktop1', 4);
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      grid-column-gap: functions.map-deep-get(variables.$margins, 'desktop2', 4);
+      grid-row-gap: functions.map-deep-get(variables.$margins, 'desktop2', 4);
+    }
+  }
+}

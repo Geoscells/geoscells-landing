@@ -1,0 +1,127 @@
+@use 'sass:map';
+@use '../../styles/variables';
+@use '../../styles/functions';
+
+.header {
+  width: 100%;
+  height: 45px;
+  z-index: 3;
+  transition: top 900ms, background-color 900ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+    height: 100px;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+    height: 150px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .logoWrapper {
+      //z-index: 2;
+    }
+  }
+
+  .left {
+    display: block;
+    gap: functions.map-deep-get(variables.$margins, 'desktop1', 6);
+    align-items: center;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      display: flex;
+    }
+
+    .delimiter {
+      display: none;
+      height: 100%;
+      border-right: 1px solid variables.$colorSolidWhite;
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+        display: block;
+      }
+    }
+
+    .fewJunkWords {
+      display: none;
+      max-width: 170px;
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+        display: block;
+      }
+
+      * {
+        font-size: 12px;
+        line-height: 1.3;
+      }
+    }
+  }
+
+  .contactBlock {
+    display: none;
+    flex-direction: column;
+    gap: functions.map-deep-get(variables.$margins, 'tablet', 5);
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      display: flex;
+    }
+
+    .anyQuestions {
+      text-align: right;
+    }
+
+    .info {
+      display: flex;
+      justify-content: flex-end;
+      gap: functions.map-deep-get(variables.$margins, 'tablet', 5);
+      align-items: center;
+
+      .firstBlock {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        gap: functions.map-deep-get(variables.$margins, 'tablet', 6);
+
+        .fbLinkWrapper {
+          display: flex;
+          align-items: flex-start;
+          gap: functions.map-deep-get(variables.$margins, 'tablet', 6);
+        }
+      }
+
+      .secondBlock {
+
+      }
+    }
+
+    * {
+      font-size: 12px;
+      line-height: 1.3;
+    }
+  }
+
+  * {
+    font-family: variables.$gilroyFontFamily;
+    font-weight: 400;
+    font-size: 12px;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      font-size: 14px;
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      font-size: 16px;
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      font-size: 22px;
+    }
+  }
+}

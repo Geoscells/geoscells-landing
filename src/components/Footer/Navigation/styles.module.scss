@@ -1,0 +1,9 @@
+@use 'sass:map';
+@use '../../../styles/variables';
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

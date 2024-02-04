@@ -1,0 +1,69 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '../../styles/variables';
+@use '../../styles/functions';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-row-gap: functions.map-deep-get(variables.$margins, 'mobile', 3);
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: functions.map-deep-get(variables.$margins, 'desktop1', 4);
+    grid-column-gap: functions.map-deep-get(variables.$margins, 'desktop1', 4);
+  }
+
+  .imageWrapper {
+    $size: 210px;
+    width: $size;
+    height: $size;
+    position: relative;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      justify-self: end;
+    }
+
+    &, & .index {
+      border-radius: variables.$borderRadius;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .index {
+      $width: 45px;
+      $padding: 5px;
+      position: absolute;
+      top: -((math.div($width, 100) * 35) - $padding);
+      left: -((math.div($width, 100) * 35) - $padding);
+      text-align: center;
+
+      color: variables.$colorSolidWhite;
+      background-color: rgba(variables.$color9, 0.6);
+      backdrop-filter: variables.$blurFilter;
+
+      //color: variables.$colorBlack;
+      //background-color: variables.$colorSolidWhite;
+      font-family: variables.$gilroyFontFamily;
+      padding: $padding;
+      aspect-ratio: 1/1;
+      width: $width;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+
+  .textWrapper {
+    .text {
+    }
+  }
+}

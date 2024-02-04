@@ -1,0 +1,25 @@
+@use 'sass:map';
+@use '../../styles/variables';
+@use '../../styles/functions';
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+    padding: 0 80px;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+    padding: 0 120px;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+    padding: 0 50px;
+    max-width: 1620px;
+  }
+}

@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use '../../../../styles/variables';
+@use '../../../../styles/functions';
+
+.subTitle {
+  padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 3);
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 3);
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 3);
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 4);
+  }
+}

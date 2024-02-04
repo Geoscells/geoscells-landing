@@ -1,0 +1,73 @@
+@use 'sass:map';
+@use '../../../../styles/variables';
+@use '../../../../styles/functions';
+
+.container {
+  width: 100%;
+  padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 1) * 2;
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 1) * 2;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 1) * 2;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'desktop2', 2) * 2;
+  }
+
+  .titleWrapper {
+    text-align: center;
+    padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 2);
+    width: 100%;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 2);
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 2);
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      padding-bottom: functions.map-deep-get(variables.$margins, 'desktop2', 3);
+    }
+
+    .title {
+      margin-bottom: 0;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: functions.map-deep-get(variables.$margins, 'mobile', 1) * 2;
+    justify-content: space-evenly;
+    padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 2);
+    align-items: center;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      gap: functions.map-deep-get(variables.$margins, 'tablet', 3);
+      align-items: center;
+      padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 2);
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      flex-direction: row;
+      gap: functions.map-deep-get(variables.$margins, 'desktop1', 3);
+      align-items: flex-start;
+      padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 2);
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      padding-bottom: functions.map-deep-get(variables.$margins, 'desktop2', 3);
+    }
+  }
+
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

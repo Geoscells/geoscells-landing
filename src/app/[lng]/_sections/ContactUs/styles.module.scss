@@ -1,0 +1,55 @@
+@use 'sass:map';
+@use '../../../../styles/variables';
+@use '../../../../styles/functions';
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 1) * 2;
+  align-items: center;
+  gap:  functions.map-deep-get(variables.$margins, 'mobile', 3);
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 1) * 2;
+    gap:  functions.map-deep-get(variables.$margins, 'tablet', 3);
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 1) * 2;
+    gap:  functions.map-deep-get(variables.$margins, 'desktop1', 4);
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+    padding-bottom: functions.map-deep-get(variables.$margins, 'desktop2', 2) * 2;
+    gap:  functions.map-deep-get(variables.$margins, 'desktop2', 4);
+  }
+
+  .cell {
+    $size: 100px;
+    width: $size;
+    height: $size;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+      $size: 150px;
+      width: $size;
+      height: $size;
+    }
+  }
+
+  .text {
+    text-align: center;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      text-align: left;
+      flex-grow: 1;
+      max-width: 550px;
+    }
+  }
+
+  .buttonWrapper {
+
+  }
+}

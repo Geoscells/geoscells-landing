@@ -1,0 +1,23 @@
+@use 'sass:map';
+@use '../../styles/variables';
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .img {
+    height: 38px;
+    width: 59.22px;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      height: 60px;
+      width: 93.5px;
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      height: 77px;
+      width: 120px;
+    }
+  }
+}

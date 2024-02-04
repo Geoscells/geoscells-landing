@@ -1,0 +1,116 @@
+@use 'sass:color';
+@use 'functions';
+
+// Fonts
+$fontFamily: var(--font-inter), sans-serif;
+$gilroyFontFamily: var(--font-gilroy), sans-serif;
+$headerFontFamily: var(--font-gilroy), sans-serif;
+$fontSize: 16px !default;
+$fontSizeSm: 10pt !default;
+$fwLight: 100;
+$fwRegular: 400;
+$fwSemiBold: 600;
+$fwBold: 700;
+$headingScale: 3.1;
+$headingBreakpointScales: (
+  sm: 6,
+  md: 9,
+  xxl: 11
+);
+
+// New colors
+$colorBlack: #0e1113;
+$colorAltBlack: #14231f;
+$colorGeoGray: #5e5e5e;
+$colorIcoGray: #c2c2c2;
+$colorSolidWhite: #f8f8f8;
+$colorGeoGreen: #3dc4b1;
+$colorGeoGreenHover: #28766b;
+$colorGeoRed: #ff4673;
+$colorGeoRedHover: #9a2d47;
+
+// Colors // Deprecated
+$color1: #151c1f;
+$color2: #07d49a;
+$color3: color.adjust($color2, $lightness: -5%);
+$color4: #8b8b8b;
+$color5: color.adjust($color4, $lightness: 20%);
+$color6: #ffffff;
+$color7: color.adjust($color3, $lightness: -5%);
+$color8: #ea3d60;
+$color9: color.adjust($color1, $lightness: 13%);
+$color10: color.adjust($color1, $lightness: -6%);
+$colorSolidWhite-hover: $color6;
+
+// Animation
+$animationTime: 0.5s;
+$animationBezier: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+// Other
+$borderRadius: 10px;
+$newBreakpoints: (
+  mobile: 320px,
+  tablet: 768px,
+  desktop1: 1280px,
+  desktop2: 1920px
+);
+$breakpoints: (
+  // Deprecated
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1600px
+);
+$maxWidthMainContent: 1680px;
+$blurFilter: blur(6px);
+$margins: (
+  mobile: (
+    1: 42px,
+    2: 32px,
+    3: 26px,
+    4: 16px,
+    5: 10px,
+    6: 5px
+  ),
+  tablet: (
+    1: 72px,
+    2: 56px,
+    3: 38px,
+    4: 22px,
+    5: 16px,
+    6: 10px
+  ),
+  desktop1: (
+    1: 110px,
+    2: 82px,
+    3: 42px,
+    4: 24px,
+    5: 16px,
+    6: 10px
+  ),
+  desktop2: (
+    1: 216px,
+    2: 170px,
+    3: 120px,
+    4: 46px,
+    5: 28px,
+    6: 16px
+  )
+);
+
+:export {
+  colorGeoGreen: rgba($colorGeoGreen, 0.999999);
+  colorGeoGreen30Opacity: rgba($colorGeoGreen, 0.7);
+  colorGeoGreen60Opacity: rgba($colorGeoGreen, 0.4);
+  colorAltBlack: rgba($colorAltBlack, 0.999999);
+  colorSolidWhite: $colorSolidWhite;
+  colorGeoGray: $colorGeoGray;
+
+  color2: rgba($color2, 0.999999);
+  color6: $color6;
+  color9: $color9;
+  @each $name, $value in $breakpoints {
+    breakpoint#{functions.capitalize($name)}: $value;
+  }
+}

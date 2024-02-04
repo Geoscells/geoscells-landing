@@ -1,0 +1,103 @@
+@use 'sass:map';
+@use '../../styles/variables';
+
+.buttonLink {
+  background-color: variables.$colorGeoGreen;
+  border: 0;
+  color: variables.$colorSolidWhite;
+  border-radius: variables.$borderRadius;
+  cursor: pointer;
+  text-transform: lowercase;
+  font-family: variables.$gilroyFontFamily;
+  font-style: normal;
+  font-weight: variables.$fwRegular;
+  font-size: 18px;
+  line-height: 21px;
+  transition: opacity 0.3s ease;
+
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  &:not([disabled]):hover {
+    background-color: variables.$colorGeoGreenHover;
+  }
+
+  &.red {
+    background-color: variables.$colorGeoRed;
+
+    &:not([disabled]):hover {
+      background-color: variables.$colorGeoRedHover;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: unset;
+  }
+
+  &.smSize {
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 16px;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      width: 138px;
+      height: 48px;
+      line-height: 16px;
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      width: 180px;
+      height: 52px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  &.mdSize {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 14px;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      width: 245px;
+      height: 60px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      width: 275px;
+      height: 62px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &.lgSize {
+    width: 190px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 21px;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      width: 245px;
+      height: 60px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+      width: 365px;
+      height: 100px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}

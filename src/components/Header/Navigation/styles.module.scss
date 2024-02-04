@@ -1,0 +1,33 @@
+@use 'sass:map';
+@use '../../../styles/variables';
+
+$gap: .8rem;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: $gap;
+  margin: 0;
+  flex-direction: row;
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+    flex-grow: 1;
+  }
+
+  .navLinks {
+    display: none;
+
+    @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      display: flex;
+      justify-content: space-evenly;
+      gap: $gap;
+      flex-direction: row;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    * {
+      font-size: 14px;
+    }
+  }
+}
