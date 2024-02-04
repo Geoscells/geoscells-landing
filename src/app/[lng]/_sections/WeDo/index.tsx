@@ -1,5 +1,7 @@
 import PreviewSection from '@/components/PreviewSection';
-import SideImg from './pic.webp';
+import SideImg6 from './img/ai_art_6.webp';
+import SideImg7 from './img/ai_art_7.webp';
+import SideImg8 from './img/ai_art_8.webp';
 import {getTranslation} from '@/i18n';
 import style from './styles.module.scss';
 import {SectionCommonType} from '@/app/[lng]/_sections/SectionCommonType';
@@ -19,7 +21,7 @@ const WeDo: SectionCommonType = async ({lng}) => {
           </>
         }
         button={{title: t('sections.weDo.supportButton'), href: `${process.env.MAIN_SITE_BASE_PATH}/${lng}#donate`}}
-        imageSrc={SideImg}
+        imageSrc={SideImg6}
         reverseLayoutDirection
       />
 
@@ -35,7 +37,7 @@ const WeDo: SectionCommonType = async ({lng}) => {
           title: t('sections.weDo.subSections.subSec1.btnTitle'),
           href: `${process.env.MAIN_SITE_BASE_PATH}/${lng}/platform`
         }}
-        imageSrc={SideImg}
+        imageSrc={SideImg7}
       />
 
       <PreviewSection
@@ -50,7 +52,7 @@ const WeDo: SectionCommonType = async ({lng}) => {
           title: t('sections.weDo.subSections.subSec2.btnTitle'),
           href: `${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`
         }}
-        imageSrc={SideImg}
+        imageSrc={SideImg8}
         reverseLayoutDirection
       />
     </>

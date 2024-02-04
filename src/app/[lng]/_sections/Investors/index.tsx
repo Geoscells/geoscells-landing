@@ -1,6 +1,8 @@
 import {getTranslation} from '@/i18n';
 import style from './styles.module.scss';
-import Img from './img/pic.webp';
+import Img1 from './img/ai_art_10.jpg';
+import Img2 from './img/ai_art_11.jpg';
+import Img3 from './img/ai_art_12.jpg';
 import ContentWrapper from '@/components/ContentWrapper';
 import {SectionCommonType} from '@/app/[lng]/_sections/SectionCommonType';
 import CollabOptionItem from '@/components/CollabOptionItem';
@@ -10,15 +12,15 @@ const Investors: SectionCommonType = async ({lng}) => {
 
   const imgAndButton = [
     {
-      imgSrc: Img,
+      imgSrc: Img1,
       btnLink: `${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`
     },
     {
-      imgSrc: Img,
+      imgSrc: Img2,
       btnLink: `${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`
     },
     {
-      imgSrc: Img,
+      imgSrc: Img3,
       btnLink: `${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`
     }
   ];
