@@ -1,5 +1,16 @@
+@use 'sass:math';
 @use 'sass:map';
 @use '../../styles/variables';
+
+@mixin heightAndPadding($totalHeight) {
+  $pPadding: 20;
+  $pHeight: 100 - $pPadding;
+  $yPadding: math.div($totalHeight * $pPadding, 100);
+
+  min-height: math.div($totalHeight * $pHeight, 100);
+  padding-top: $yPadding;
+  padding-bottom: $yPadding;
+}
 
 .buttonLink {
   background-color: variables.$colorGeoGreen;
@@ -41,19 +52,19 @@
 
   &.smSize {
     width: 120px;
-    height: 35px;
+    @include heightAndPadding(35px);
     font-size: 14px;
     line-height: 16px;
 
     @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
       width: 138px;
-      height: 48px;
+      @include heightAndPadding(48px);
       line-height: 16px;
     }
 
     @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
       width: 180px;
-      height: 52px;
+      @include heightAndPadding(52px);
       font-size: 16px;
       line-height: 18px;
     }
@@ -61,20 +72,20 @@
 
   &.mdSize {
     width: 100px;
-    height: 40px;
+    @include heightAndPadding(40px);
     font-size: 12px;
     line-height: 14px;
 
     @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
       width: 245px;
-      height: 60px;
+      @include heightAndPadding(60px);;
       font-size: 18px;
       line-height: 21px;
     }
 
     @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
       width: 275px;
-      height: 62px;
+      @include heightAndPadding(62px);;
       font-size: 20px;
       line-height: 24px;
     }
@@ -82,20 +93,20 @@
 
   &.lgSize {
     width: 190px;
-    height: 50px;
+    @include heightAndPadding(50px);;
     font-size: 18px;
     line-height: 21px;
 
     @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
       width: 245px;
-      height: 60px;
+      @include heightAndPadding(60px);;
       font-size: 24px;
       line-height: 28px;
     }
 
     @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
       width: 365px;
-      height: 100px;
+      @include heightAndPadding(100px);;
       font-size: 32px;
       line-height: 38px;
     }
