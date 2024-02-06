@@ -107,7 +107,10 @@
       object-fit: contain;
       margin: 0 auto;
       max-width: 700px;
-      border-radius: variables.$borderRadius;
+
+      @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+        border-radius: variables.$borderRadius;
+      }
     }
   }
 
