@@ -16,6 +16,7 @@
     "i18n:interface": "i18next-resources-for-ts interface -i src/i18n/locales/en -o src/i18n/@types/GeoscellsResources.d.ts"
   },
   "dependencies": {
+    "@next/third-parties": "14.1.0",
     "classnames": "2.5.1",
     "i18next": "23.7.18",
     "next": "14.1.0",

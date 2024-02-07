@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import BackToTopButton from '@/components/BackToTopButton';
 import {FC, PropsWithChildren} from 'react';
 import LngInterface from '@/LngInterface';
+import {GoogleTagManager} from '@next/third-parties/google';
 
 export const generateMetadata = async ({params: {lng}}: {params: LngInterface}) => {
   const {t} = await getTranslation(lng);
@@ -35,6 +36,7 @@ const RootLayout: FC<RootLayoutProps> = ({params: {lng}, children}) => {
           <Footer lng={lng} />
         </BackToTopButton>
       </body>
+      <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID ?? ''} />
     </html>
   );
 };
