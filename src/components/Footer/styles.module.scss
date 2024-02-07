@@ -5,6 +5,19 @@
 .container {
   background-color: variables.$colorBlack;
   width: 100%;
+  margin-top: functions.map-deep-get(variables.$margins, 'mobile', 1) * 2;
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+    margin-top: functions.map-deep-get(variables.$margins, 'tablet', 1) * 2;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+    margin-top: functions.map-deep-get(variables.$margins, 'desktop1', 1) * 2;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
+    margin-top: functions.map-deep-get(variables.$margins, 'desktop2', 2) * 2;
+  }
 
   .content {
     display: grid;

@@ -5,18 +5,18 @@
 .container {
 
   width: 100%;
-  padding-bottom: functions.map-deep-get(variables.$margins, 'mobile', 1) * 2;
+  padding-top: functions.map-deep-get(variables.$margins, 'mobile', 1) * 2;
 
   @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
-    padding-bottom: functions.map-deep-get(variables.$margins, 'tablet', 1) * 2;
+    padding-top: functions.map-deep-get(variables.$margins, 'tablet', 1) * 2;
   }
 
   @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
-    padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 1) * 2;
+    padding-top: functions.map-deep-get(variables.$margins, 'desktop1', 1) * 2;
   }
 
   @media (min-width: map.get(variables.$newBreakpoints, 'desktop2')) {
-    padding-bottom: functions.map-deep-get(variables.$margins, 'desktop2', 2) * 2;
+    padding-top: functions.map-deep-get(variables.$margins, 'desktop2', 2) * 2;
   }
 
   &:before {
