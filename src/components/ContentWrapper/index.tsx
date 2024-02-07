@@ -5,7 +5,7 @@ import {FC, HTMLProps, PropsWithChildren} from 'react';
 interface ContentWrapperProps extends PropsWithChildren, HTMLProps<HTMLDivElement> {}
 
 const ContentWrapper: FC<ContentWrapperProps> = ({id, className, children, ...otherProps}) => (
-  <div className={classnames(style.contentWrapper, className)} {...otherProps}>
+  <div id={id} className={classnames(style.contentWrapper, className)} {...otherProps}>
     {children}
   </div>
 );
