@@ -1,0 +1,17 @@
+@use 'sass:map';
+@use '../../../styles/variables';
+@use '../../../styles/functions';
+
+.container {
+  display: flex;
+  gap: 2em;
+  width: auto;
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+    gap: 1.5em;
+  }
+
+  @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
+    gap: 1em;
+  }
+}

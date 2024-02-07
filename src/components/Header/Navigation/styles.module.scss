@@ -4,14 +4,15 @@
 $gap: .8rem;
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  gap: $gap;
-  margin: 0;
-  flex-direction: row;
+  display: none;
 
   @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
     flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: $gap;
+    margin: 0;
+    flex-direction: row;
   }
 
   .navLinks {

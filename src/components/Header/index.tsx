@@ -8,12 +8,14 @@ import Image from 'next/image';
 import PhoneIcon from './icons/phone.svg';
 import {FC} from 'react';
 import LngInterface from '@/LngInterface';
+import LangSwitcher from '@/components/Header/LangSwitcher';
 
 const Header: FC<LngInterface> = async ({lng}) => {
   const {t} = await getTranslation(lng);
   return (
     <header className={style.header}>
-      <ContentWrapper>
+      <ContentWrapper className={style.contentWrapper}>
+        <LangSwitcher className={style.langSwitcher} />
         <div className={style.content}>
           <div className={style.left}>
             <Logo className={style.logoWrapper} />
@@ -23,6 +25,7 @@ const Header: FC<LngInterface> = async ({lng}) => {
               <div>{t('fewWordsNearLogo.secondLine')}</div>
             </div>
           </div>
+          <LangSwitcher className={style.langSwitcher} />
           <Navigation lng={lng} />
           <div className={style.contactBlock}>
             <div className={style.anyQuestions}>
