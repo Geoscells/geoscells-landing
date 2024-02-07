@@ -124,8 +124,8 @@
       img {
         width: 32px;
         height: 32px;
-        fill: variables.$colorGeoGray;
-        filter: invert(35%) sepia(0%) saturate(38%) hue-rotate(179deg) brightness(98%) contrast(82%);
+        fill: variables.$colorSolidWhite;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2320%) hue-rotate(149deg) brightness(112%) contrast(95%);
 
         @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
           width: 26px;
@@ -140,7 +140,7 @@
     }
 
     * {
-      color: variables.$colorGeoGray;
+      color: variables.$colorSolidWhite;
 
       .buttonLink {
         color: variables.$colorSolidWhite;
