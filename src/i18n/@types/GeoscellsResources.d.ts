@@ -22,7 +22,10 @@ interface Resources {
     },
     "sections": {
       "welcome": {
-        "title": "We promote the implementation of programs and activities aimed at science and new medical discoveries",
+        "title": {
+          "main": "We promote the implementation of programs and activities aimed at science and ",
+          "highlightedSuffix": "new medical discoveries"
+        },
         "points": [
           "We are actively raising funds for the development of an innovative medical project",
           "Promote the exchange of experience and knowledge"

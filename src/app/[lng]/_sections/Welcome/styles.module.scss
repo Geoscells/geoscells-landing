@@ -76,6 +76,19 @@
           font-size: 49px;
           padding-bottom: functions.map-deep-get(variables.$margins, 'desktop1', 4);
         }
+
+        .highlightedSuffix {
+          line-height: 1.35;
+          display: inline;
+          box-decoration-break: clone;
+          background: variables.$colorGeoRed;
+          padding: .2rem .5rem;
+          filter: url('#goo');
+
+          &:focus {
+            outline: 0;
+          }
+        }
       }
 
       .points {
