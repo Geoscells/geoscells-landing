@@ -24,7 +24,7 @@ const Team: SectionCommonType = async ({lng}) => {
   ));
 
   return (
-    <div id={Team.id} className={style.container}>
+    <section id={Team.id} className={style.container}>
       <div className={style.titleWrapper}>
         <h1 className={style.title}>{t('sections.team.title')}</h1>
       </div>
@@ -34,7 +34,7 @@ const Team: SectionCommonType = async ({lng}) => {
           {t('sections.team.contactUsButton')}
         </ButtonLink>
       </div>
-    </div>
+    </section>
   );
 };
 

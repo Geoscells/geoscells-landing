@@ -19,7 +19,7 @@ const ActiveResearch: SectionCommonType = async ({lng}) => {
   ));
 
   return (
-    <div id={ActiveResearch.id} className={style.container}>
+    <section id={ActiveResearch.id} className={style.container}>
       <ContentWrapper className={style.titleWrapper}>
         <h1 className={style.title}>{t('sections.activeResearch.title')}</h1>
       </ContentWrapper>
@@ -32,7 +32,7 @@ const ActiveResearch: SectionCommonType = async ({lng}) => {
           {t('sections.activeResearch.learnMoreBtn')}
         </ButtonLink>
       </div>
-    </div>
+    </section>
   );
 };
 

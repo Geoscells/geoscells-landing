@@ -10,7 +10,7 @@ const ContactUs: SectionCommonType = async ({lng}) => {
   const {t} = await getTranslation(lng);
 
   return (
-    <ContentWrapper id={ContactUs.id}>
+    <ContentWrapper id={ContactUs.id} as="section">
       <div className={style.container}>
         <Image src={CellImg} alt={'Cell'} className={style.cell} />
         <div className={style.text}>{t('sections.contactUs.text')}</div>

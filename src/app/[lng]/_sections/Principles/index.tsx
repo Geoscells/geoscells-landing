@@ -20,12 +20,12 @@ const Principles: SectionCommonType = async ({lng}) => {
   ));
 
   return (
-    <div id={Principles.id} className={style.container}>
+    <section id={Principles.id} className={style.container}>
       <ContentWrapper className={style.titleWrapper}>
         <h1 className={style.title}>{t('sections.principles.title')}</h1>
       </ContentWrapper>
       <ContentWrapper className={style.content}>{membersJsx}</ContentWrapper>
-    </div>
+    </section>
   );
 };
 

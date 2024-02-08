@@ -36,7 +36,7 @@ const Investors: SectionCommonType = async ({lng}) => {
   ));
 
   return (
-    <div className={style.container}>
+    <section className={style.container}>
       <ContentWrapper className={style.titleWrapper}>
         <h1 className={style.title}>{t('sections.investors.title')}</h1>
       </ContentWrapper>
@@ -44,7 +44,7 @@ const Investors: SectionCommonType = async ({lng}) => {
         <h3 className={style.subTitle}>{t('sections.investors.subTitle')}</h3>
       </ContentWrapper>
       <ContentWrapper className={style.content}>{colabOptionsJsx}</ContentWrapper>
-    </div>
+    </section>
   );
 };
 
