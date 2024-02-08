@@ -33,7 +33,7 @@
     & > .langSwitcher {
       display: none;
 
-      @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+      @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
         display: flex;
       }
     }
@@ -47,7 +47,7 @@
         display: flex;
         align-items: center;
 
-        @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+        @media (min-width: map.get(variables.$newBreakpoints, 'desktop1')) {
           display: none;
         }
       }
