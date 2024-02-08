@@ -18,7 +18,7 @@ interface Resources {
     "headerContact": {
       "anyQuestions": "Do you have any questions? Contact us!",
       "tel": "+38(044)247-78-00",
-      "email": "info@savescienceukraine.org"
+      "email": "info@savescienceinukraine.org"
     },
     "sections": {
       "welcome": {
@@ -142,7 +142,7 @@ interface Resources {
         ]
       },
       "contactUs": {
-        "text": "If you have any questions or suggestions on how to support the charity organization \"Save Science in Ukraine\", please leave your phone number and we will call you back.",
+        "text": "If you have any questions or suggestions on how to support the charity organization \"Save Science in Ukraine\", please fill out the form - we will contact you.",
         "buttonTitle": "CONTACT"
       },
       "activeResearch": {
