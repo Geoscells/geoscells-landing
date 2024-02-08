@@ -20,7 +20,9 @@ const CollabOptionItem: FC<CollabOptionItemProps> = ({title, imgSrc, text, butto
       <h3 className={style.title}>{title}</h3>
       <p className={style.text}>{text}</p>
       <div className={style.buttonWrapper}>
-        <ButtonLink href={href}>{btnTitle}</ButtonLink>
+        <ButtonLink href={href} className={style.button}>
+          {btnTitle}
+        </ButtonLink>
       </div>
     </div>
   </div>

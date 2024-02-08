@@ -64,6 +64,12 @@
         display: flex;
         align-items: flex-end;
       }
+
+      .button {
+        @media (min-width: map.get(variables.$newBreakpoints, 'tablet')) {
+          height: 66px;
+        }
+      }
     }
   }
 }
