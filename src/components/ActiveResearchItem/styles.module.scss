@@ -1,6 +1,6 @@
 @use 'sass:map';
 @use 'sass:math';
-@use '../../styles/variables';
+@use '../../styles/variables.module';
 @use '../../styles/functions';
 
 .container {

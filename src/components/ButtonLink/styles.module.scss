@@ -1,6 +1,6 @@
 @use 'sass:math';
 @use 'sass:map';
-@use '../../styles/variables';
+@use '../../styles/variables.module';
 
 @mixin heightAndPadding($totalHeight) {
   $pPadding: 20;
