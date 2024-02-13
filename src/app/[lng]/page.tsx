@@ -6,7 +6,7 @@ import About from './_sections/About';
 import Team from './_sections/Team';
 import Principles from './_sections/Principles';
 import ContactUs from './_sections/ContactUs';
-import ActiveResearch from './_sections/ActiveResearch';
+// import ActiveResearch from './_sections/ActiveResearch';
 import Investors from './_sections/Investors';
 import LngInterface from '@/LngInterface';
 import {FC} from 'react';
@@ -21,7 +21,7 @@ const Home: FC<HomeProps> = async ({params: {lng}}) => {
       <Welcome lng={lng} />
       <Mission lng={lng} />
       <WeDo lng={lng} />
-      <ActiveResearch lng={lng} />
+      {/*<ActiveResearch lng={lng} />*/} {/*Hidden on demand*/}
       <About lng={lng} />
       <Team lng={lng} />
       <Principles lng={lng} />

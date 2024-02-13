@@ -1,7 +1,7 @@
 import Mission from '@/app/[lng]/_sections/Mission';
 import WeDo from '@/app/[lng]/_sections/WeDo';
 import About from '@/app/[lng]/_sections/About';
-import ActiveResearch from '@/app/[lng]/_sections/ActiveResearch';
+// import ActiveResearch from '@/app/[lng]/_sections/ActiveResearch';
 import Team from '@/app/[lng]/_sections/Team';
 import Principles from '@/app/[lng]/_sections/Principles';
 import ContactUs from '@/app/[lng]/_sections/ContactUs';
@@ -24,10 +24,10 @@ const options: Option[] = [
     i18nKey: 'headerNavigation.aboutUs',
     link: `#${About.id}`
   },
-  {
-    i18nKey: 'headerNavigation.projects',
-    link: `#${ActiveResearch.id}`
-  },
+  // {
+  //   i18nKey: 'headerNavigation.projects',
+  //   link: `#${ActiveResearch.id}`
+  // },
   {
     i18nKey: 'headerNavigation.founders',
     link: `#${Team.id}`
