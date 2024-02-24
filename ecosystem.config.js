@@ -27,7 +27,7 @@ module.exports = {
       ref: 'origin/main',
       repo: 'git@github_landing_project:Geoscells/geoscells-landing.git',
       path: '/etc/pm2-apps/landing',
-      'post-deploy': `npm install && env-cmd -f ${ENV_PATH} npm run build && PM2_HOME=/var/www pm2 reload ecosystem.config.js --env production`,
+      'post-deploy': `export NODE_OPTIONS='--max-old-space-size=4096' && npm install && env-cmd -f ${ENV_PATH} npm run build && PM2_HOME=/var/www pm2 reload ecosystem.config.js --env production`,
       key: '~/.ssh/geoscells-deploy-dude'
     }
   }
