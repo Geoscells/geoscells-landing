@@ -20,6 +20,15 @@ module.exports = {
       path: '/home/landing',
       'post-deploy': `npm install && env-cmd -f ${ENV_PATH} npm run build && PM2_HOME=/var/www pm2 reload ecosystem.config.js --env production`,
       key: '~/.ssh/geoscells'
+    },
+    digital_ocean: {
+      user: 'deploy_dude',
+      host: '24.144.92.23',
+      ref: 'origin/main',
+      repo: 'git@github_landing_project:Geoscells/geoscells-landing.git',
+      path: '/etc/pm2-apps/landing',
+      'post-deploy': `npm install && env-cmd -f ${ENV_PATH} npm run build && PM2_HOME=/var/www pm2 reload ecosystem.config.js --env production`,
+      key: '~/.ssh/geoscells-deploy-dude'
     }
   }
 };
