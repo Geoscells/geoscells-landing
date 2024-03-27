@@ -5,6 +5,7 @@ import SideImg8 from './img/ai_art_8.webp';
 import {getTranslation} from '@/i18n';
 import style from './styles.module.scss';
 import {SectionCommonType} from '@/app/[lng]/_sections/SectionCommonType';
+import Team from '@/app/[lng]/_sections/Team';
 
 const WeDo: SectionCommonType = async ({lng}) => {
   const {t} = await getTranslation(lng);
@@ -50,7 +51,7 @@ const WeDo: SectionCommonType = async ({lng}) => {
         }
         button={{
           title: t('sections.weDo.subSections.subSec2.btnTitle'),
-          href: `${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`
+          href: `/${lng}#${Team.id}`
         }}
         imageSrc={SideImg8}
         reverseLayoutDirection
