@@ -35,7 +35,7 @@ const WeDo: SectionCommonType = async ({lng}) => {
         }
         button={{
           title: t('sections.weDo.subSections.subSec1.btnTitle'),
-          href: `${process.env.MAIN_SITE_BASE_PATH}/${lng}/platform`
+          href: t('sections.weDo.subSections.subSec1.btnTitleUrl')
         }}
         imageSrc={SideImg7}
       />

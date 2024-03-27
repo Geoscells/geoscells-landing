@@ -62,7 +62,8 @@ interface Resources {
           "subSec1": {
             "title": "We participate in the development of latest medical advances and support the implementation of healthcare programs",
             "text": "Our team is focused on solving global and extremely medical problem that modern medicine and pharmacology face today. The main goal is to move the field of medicine forward and remove the shortcomings of conservative treatment so that modern medicines can treat and restore health using scientific discoveries.",
-            "btnTitle": "Learn more about the research"
+            "btnTitle": "Learn more about the research",
+            "btnTitleUrl": "https://geoscells.com/uploads/White_Paper_Geoscells_EN_4eded9b71b.pdf?updated_at=2023-02-27T20:39:18.707Z"
           },
           "subSec2": {
             "title": "We find and connect projects, teams, researchers, laboratories, and companies",
