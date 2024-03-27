@@ -15,9 +15,7 @@ const ContactUs: SectionCommonType = async ({lng}) => {
         <Image src={CellImg} alt={'Cell'} className={style.cell} />
         <div className={style.text}>{t('sections.contactUs.text')}</div>
         <div className={style.buttonWrapper}>
-          <ButtonLink href={`${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`}>
-            {t('sections.contactUs.buttonTitle')}
-          </ButtonLink>
+          <ButtonLink href={`/${lng}#contact-info`}>{t('sections.contactUs.buttonTitle')}</ButtonLink>
         </div>
       </div>
     </ContentWrapper>

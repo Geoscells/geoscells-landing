@@ -13,15 +13,15 @@ const Investors: SectionCommonType = async ({lng}) => {
   const imgAndButton = [
     {
       imgSrc: Img1,
-      btnLink: `${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`
+      btnLink: `/${lng}#contact-info`
     },
     {
       imgSrc: Img2,
-      btnLink: `${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`
+      btnLink: `/${lng}#contact-info`
     },
     {
       imgSrc: Img3,
-      btnLink: `${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`
+      btnLink: `/${lng}#contact-info`
     }
   ];
 

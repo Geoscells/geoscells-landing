@@ -4,16 +4,20 @@ import classnames from 'classnames';
 import {FC} from 'react';
 
 interface ButtonLinkProps {
-  href: string;
+  href?: string;
   children?: any;
   className?: string;
   onClick?: () => void;
   size?: 'sm' | 'md' | 'lg';
 }
 
-const ButtonLink: FC<ButtonLinkProps> = ({className, size = 'md', ...otherProps}) => {
+const ButtonLink: FC<ButtonLinkProps> = ({className, size = 'md', href, ...otherProps}) => {
   const buttonClassName = classnames(style.buttonLink, style[`${size}Size`], className);
-  return <Link {...otherProps} className={buttonClassName} />;
+  if (href) {
+    return <Link {...otherProps} href={href} className={buttonClassName} />;
+  } else {
+    return <button {...otherProps} className={buttonClassName} />;
+  }
 };
 
 export default ButtonLink;

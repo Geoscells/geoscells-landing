@@ -30,9 +30,7 @@ const Team: SectionCommonType = async ({lng}) => {
       </div>
       <ContentWrapper className={style.content}>{membersJsx}</ContentWrapper>
       <div className={style.buttonWrapper}>
-        <ButtonLink href={`${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`}>
-          {t('sections.team.contactUsButton')}
-        </ButtonLink>
+        <ButtonLink href={`/${lng}#contact-info`}>{t('sections.team.contactUsButton')}</ButtonLink>
       </div>
     </section>
   );

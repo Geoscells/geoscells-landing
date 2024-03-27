@@ -59,7 +59,7 @@ const Footer: FC<LngInterface> = async ({lng}) => {
             <div>{t('fewWordsNearLogo.secondLine')}</div>
           </div>
           <Navigation lng={lng} />
-          <div>
+          <div id="contact-info">
             <address className={style.footerItem}>
               <div>{t('footer.callUs.label')}</div>
               <Link href={`tel:${t('footer.callUs.tel')}`} className="with-animated-underline">
@@ -87,9 +87,7 @@ const Footer: FC<LngInterface> = async ({lng}) => {
           </div>
           <div>
             <div className={style.footerItem}>
-              <ButtonLink href={`${process.env.MAIN_SITE_BASE_PATH}/${lng}/contact-us`} className={style.buttonLink}>
-                {t('footer.contactUsButton')}
-              </ButtonLink>
+              <ButtonLink className={style.buttonLink}>{t('footer.contactUsButton')}</ButtonLink>
             </div>
 
             <div className={style.footerItem}>
