@@ -54,7 +54,7 @@ const Footer: FC<LngInterface> = async ({lng}) => {
       <ContentWrapper>
         <div className={style.content}>
           <div>
-            <Logo className={style.logo} />
+            <Logo className={style.logo} lng={lng} />
             <div>{t('fewWordsNearLogo.firstLine')}</div>
             <div>{t('fewWordsNearLogo.secondLine')}</div>
           </div>

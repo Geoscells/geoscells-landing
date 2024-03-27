@@ -18,7 +18,7 @@ const Header: FC<LngInterface> = async ({lng}) => {
         <LangSwitcher className={style.langSwitcher} />
         <div className={style.content}>
           <div className={style.left}>
-            <Logo className={style.logoWrapper} />
+            <Logo className={style.logoWrapper} lng={lng} />
             <div className={style.delimiter} />
             <div className={style.fewJunkWords}>
               <div>{t('fewWordsNearLogo.firstLine')}</div>

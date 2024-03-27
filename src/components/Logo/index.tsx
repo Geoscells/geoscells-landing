@@ -9,10 +9,11 @@ interface LogoProps {
   altText?: string;
   className?: string;
   onClick?: MouseEventHandler<HTMLAnchorElement>;
+  lng: string;
 }
 
-const Logo: FC<LogoProps> = ({altText = 'Geoscell Logo', className, onClick}) => (
-  <Link href={process.env.MAIN_SITE_BASE_PATH ?? '/'} className={classnames(style.logo, className)} onClick={onClick}>
+const Logo: FC<LogoProps> = ({altText = 'Geoscell Logo', className, onClick, lng}) => (
+  <Link href={`/${lng}`} className={classnames(style.logo, className)} onClick={onClick}>
     <Image src={logo} alt={altText} className={style.img} />
   </Link>
 );
