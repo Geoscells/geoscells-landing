@@ -25,7 +25,7 @@ const Welcome: SectionCommonType = async ({lng}) => {
             <ButtonLink href={`${process.env.MAIN_SITE_BASE_PATH}/${lng}#donate`}>
               {t('sections.welcome.buttons.support')}
             </ButtonLink>
-            <ButtonLink href={`${process.env.MAIN_SITE_BASE_PATH}/${lng}`}>
+            <ButtonLink href={t('sections.welcome.buttons.learnMoreUrl')}>
               {t('sections.welcome.buttons.learnMore')}
             </ButtonLink>
           </div>

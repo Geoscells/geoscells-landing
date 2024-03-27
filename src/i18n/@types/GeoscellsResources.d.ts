@@ -33,7 +33,8 @@ interface Resources {
         "learnMoreTitle": "Learn more about our charitable foundation or support our initiatives financially",
         "buttons": {
           "support": "Support",
-          "learnMore": "Learn more"
+          "learnMore": "Learn more",
+          "learnMoreUrl": "https://geoscells.com/uploads/White_Paper_Geoscells_EN_4eded9b71b.pdf?updated_at=2023-02-27T20:39:18.707Z"
         }
       },
       "mission": {
