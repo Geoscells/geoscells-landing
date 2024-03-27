@@ -57,6 +57,7 @@ interface Resources {
         "subTitle": "We collect charitable contributions from people and look for healthcare investors to implement scientific programs",
         "text": "Newest medical breakthroughs do not come easy — scientists, doctors, diagnostic and research laboratories, etc. work on them. All this requires considerable funds, so our nonprofit healthcare organization accumulates funds so that practical medicine can use modern medical technologies and new clinical protocols as soon as possible to help patients recover faster, prevention of diseases recurrence and improve the quality of life.",
         "supportButton": "Support the CF \"Let's Save Science in Ukraine\"",
+        "supportButtonUrl": "https://geoscells.com/uploads/White_Paper_Geoscells_EN_4eded9b71b.pdf?updated_at=2023-02-27T20:39:18.707Z",
         "subSections": {
           "subSec1": {
             "title": "We participate in the development of latest medical advances and support the implementation of healthcare programs",

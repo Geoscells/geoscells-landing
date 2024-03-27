@@ -20,7 +20,7 @@ const WeDo: SectionCommonType = async ({lng}) => {
             <p>{t('sections.weDo.text')}</p>
           </>
         }
-        button={{title: t('sections.weDo.supportButton'), href: `${process.env.MAIN_SITE_BASE_PATH}/${lng}#donate`}}
+        button={{title: t('sections.weDo.supportButton'), href: t('sections.weDo.supportButtonUrl')}}
         imageSrc={SideImg6}
         reverseLayoutDirection
       />
