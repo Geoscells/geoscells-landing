@@ -49,7 +49,8 @@ interface Resources {
             "text": " is to invest in the development and strengthening of science in Ukraine, to establish close cooperation with best-in-class research institutes and centers, building mutually beneficial relationships with strategic partners for the overall development of science and supporting in health innovations."
           }
         ],
-        "learnMoreButton": "Learn more"
+        "learnMoreButton": "Learn more",
+        "learnMoreButtonUrl": "https://geoscells.com/uploads/White_Paper_Geoscells_EN_4eded9b71b.pdf?updated_at=2023-02-27T20:39:18.707Z"
       },
       "weDo": {
         "title": "What exactly do we do",

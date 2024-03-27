@@ -17,7 +17,7 @@ const Mission: SectionCommonType = async ({lng}) => {
           {p.text}
         </p>
       ))}
-      button={{title: t('sections.mission.learnMoreButton'), href: `${process.env.MAIN_SITE_BASE_PATH}/${lng}`}}
+      button={{title: t('sections.mission.learnMoreButton'), href: t('sections.mission.learnMoreButtonUrl')}}
       imageSrc={SideImg}
       reverseLayoutDirection
     />
